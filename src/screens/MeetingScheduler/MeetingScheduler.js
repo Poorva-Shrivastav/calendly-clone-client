@@ -194,7 +194,8 @@ function MeetingScheduler({ newDate ,timeSlot, start, end, setReceiverName, rece
     
             })
 
-            const response = await fetch("http://localhost:8000/send", {
+            // const response = await fetch("http://localhost:8000/send", {
+            const response = await fetch("https://calendly-clone-poorva.herokuapp.com/send", {                
             method: "POST",
             headers: {
                 "Content-type" : "application/json",

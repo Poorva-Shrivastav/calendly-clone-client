@@ -128,8 +128,8 @@ function MeetingScheduler({ newDate ,timeSlot, start, end, setReceiverName, rece
     var gapi = window.gapi
     var CLIENT_ID = process.env.REACT_APP_CLIENT_ID
     var API_KEY = process.env.REACT_APP_API_KEY
-    var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
-    var SCOPES = "https://www.googleapis.com/auth/calendar.events";
+    var DISCOVERY_DOCS = ["https://cors-anywhere.herokuapp.com/https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+    var SCOPES = "https://cors-anywhere.herokuapp.com/https://www.googleapis.com/auth/calendar.events";
                     
     
     const submitHandler = async (e) => {
